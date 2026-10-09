@@ -1,0 +1,17 @@
+{
+  "name": "ozone-issue-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Ozone Issue Tracker — centralized ticket management for OzoneBlu operations (Phase 1 MVP)",
+  "scripts": {
+    "setup": "npm --prefix server install && npm --prefix client install && npm run build && npm run seed",
+    "build": "npm --prefix client run build",
+    "seed": "npm --prefix server run seed",
+    "start": "npm --prefix server start",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "test": "npm --prefix server test",
+    "backup": "node server/scripts/backup.js"
+  },
+  "engines": { "node": ">=20" }
+}
